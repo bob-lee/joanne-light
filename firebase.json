@@ -1,0 +1,42 @@
+{
+  "functions": {
+    "source": "dist/server"
+  },
+  "hosting": {
+    "public": "dist/static",
+    "rewrites": [
+      {
+        "source": "/@(home|profile|contact)",
+        "function": "server"
+      },
+      {
+        "source": "/work/*",
+        "function": "server"
+      },
+      {
+        "source": "/",
+        "function": "server"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/sw.main.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      },
+      {
+        "source": "/images/firebase-logo-64.png",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          }
+        ]
+      }
+    ]
+  }
+}

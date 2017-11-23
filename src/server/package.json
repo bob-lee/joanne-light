@@ -1,0 +1,21 @@
+{
+  "name": "joanne-light",
+  "description": "lightweight version of Joanne's original website",
+  "dependencies": {
+    "@types/handlebars": "^4.0.33",
+    "@types/request-promise": "^4.1.35",
+    "csso": "^3.1.1",
+    "express": "^4.15.3",
+    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^0.5.9",
+    "fs-extra": "^4.0.0",
+    "handlebars": "^4.0.10",
+    "html-minifier": "^3.5.2",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "workbox-build": "^2.1.1"
+  },
+  "private": true
+}
